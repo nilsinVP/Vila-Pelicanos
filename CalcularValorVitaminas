@@ -1,0 +1,17 @@
+def calcular_custo_por_vitaminas(quantidade_vitaminas):
+    preco_por_26_vitaminas = 2300  # em mil
+    custo_total = (quantidade_vitaminas / 26) * preco_por_26_vitaminas
+    return custo_total
+
+def calcular_custo_por_pokemons(quantidade_pokemons):
+    max_vitaminas_por_pokemon = 52
+    preco_por_26_vitaminas = 2300  # em mil
+    custo_total = (quantidade_pokemons * max_vitaminas_por_pokemon / 26) * preco_por_26_vitaminas
+    return custo_total
+
+# Exemplo de uso
+quantidade_vitaminas = int(input("Digite a quantidade de vitaminas: "))
+print(f"O custo total para {quantidade_vitaminas} vitaminas é: {calcular_custo_por_vitaminas(quantidade_vitaminas)}k")
+
+quantidade_pokemons = int(input("Digite a quantidade de Pokémons: "))
+print(f"O custo total para {quantidade_pokemons} Pokémons é: {calcular_custo_por_pokemons(quantidade_pokemons)}k")
